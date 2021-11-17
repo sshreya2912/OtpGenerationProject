@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Validate Otp</title>
+</head>
+<body>
+ <div>
+ <p>Otp expired Resend it again</p>
+ </div>
+ <div>
+ <form action="getOtp" th:action="@{/getOtp}" method=post>
+ <label>Email: </label>
+ <input type="text" name="email" id="email"  ><br>
+ <button type="submit">ReSend Otp</button>
+ </form>
+ </div>
+</body>
+</html>
